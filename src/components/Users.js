@@ -17,7 +17,6 @@ export default function Users() {
         .get(API_URL)
         .then((res) => {
           setUser(res.data);
-          console.log(res.data);
         })
         .catch((err) => {
           return err;
