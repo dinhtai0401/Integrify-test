@@ -38,74 +38,63 @@ export default function Users() {
       >
         <Card sx={{ maxWidth: 500 }} style={{ padding: "2em" }}>
           <CardContent>
-            <ul className={classes.dashed} style={{ listStyleType: "- "}}>
+            <Typography
+              variant="h3"
+              style={{ marginBottom: "0.5em", color: "#37474F" }}
+            >
+              User Infomations
+            </Typography>
+            <ul className={classes.dashed} style={{ listStyleType: "- " }}>
               <li className={classes.li}>
-                <Typography
-                  variant="h5"
-                  className={classes.text}
-                >{`name: ${user.name}`}</Typography>
+                <Typography variant="h5">{`name: ${user.name}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography
-                  variant="h5"
-                  className={classes.text}
-                >{`username: ${user.username}`}</Typography>
+                <Typography variant="h5">{`username: ${user.username}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography
-                  variant="h5"
-                  className={classes.text}
-                >{`email: ${user.email}`}</Typography>
+                <Typography variant="h5">{`email: ${user.email}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography
-                  variant="h5"
-                  className={classes.text}
-                >{`phone: ${user.phone}`}</Typography>
+                <Typography variant="h5">{`phone: ${user.phone}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>{`company: ${
+                <Typography variant="h5">{`company: ${
                   user.company && user.company.name
                     ? user.company.name
                     : "Loading ..."
                 }`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography
-                  variant="h5"
-                  className={classes.text}
-                >{`website: ${user.website}`}</Typography>
+                <Typography variant="h5">{`website: ${user.website}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>
-                  Address
-                </Typography>
+                <Typography variant="h5">Address</Typography>
               </li>
             </ul>
-            <ul style={{ margin: 0 }}>
+            <ul style={{ margin: 0, paddingLeft: "20px" }}>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>{`street: ${
+                <Typography variant="h5">{`street: ${
                   user.address && user.address.street
                     ? user.address.street
                     : "Loading ..."
                 }`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>{`suite: ${
+                <Typography variant="h5">{`suite: ${
                   user.address && user.address.suite
                     ? user.address.suite
                     : "Loading ..."
                 }`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>{`city: ${
+                <Typography variant="h5">{`city: ${
                   user.address && user.address.city
                     ? user.address.city
                     : "Loading ..."
                 }`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5" className={classes.text}>{`zipcode: ${
+                <Typography variant="h5">{`zipcode: ${
                   user.address && user.address.zipcode
                     ? user.address.zipcode
                     : "Loading ..."
@@ -120,13 +109,9 @@ export default function Users() {
 }
 
 const useStyles = makeStyles({
-  text: {
-    fontWeight: "bold",
-    fontSize: "1.5em",
-    color: "#616161",
-  },
   li: {
     color: "#616161",
+    marginLeft: "1.3em",
   },
   dashed: {
     margin: 0,
