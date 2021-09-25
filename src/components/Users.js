@@ -67,7 +67,7 @@ export default function Users() {
                 <Typography variant="h5">{`website: ${user.website}`}</Typography>
               </li>
               <li className={classes.li}>
-                <Typography variant="h5">Address</Typography>
+                <Typography variant="h5">address :</Typography>
               </li>
             </ul>
             <ul style={{ margin: 0, paddingLeft: "20px" }}>
